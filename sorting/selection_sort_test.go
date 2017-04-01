@@ -5,9 +5,9 @@ import (
 	"fmt"
 )
 
-func TestBubbleSort(t *testing.T) {
+func TestSort(t *testing.T) {
 	testlist := []int{5, 6, 4, 3, 9, 8, 7, 1, 2, 4, 3, 0}
-	testlist = BubbleSort(testlist)
+	testlist = SelectionSort(testlist)
 
 	for i := 0; i < len(testlist); i++ {
 		fmt.Println(testlist[i])
